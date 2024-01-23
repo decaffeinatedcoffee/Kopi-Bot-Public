@@ -1,0 +1,90 @@
+    [
+    {
+        "id": 1,
+        "price": 200,
+        "name": "Cookie",
+        "description": "A delicious chocolate cookie.",
+        "actions": ["You ate a cookie and it was cookie.", "You ate a cookie and it was hard and you broke your teeth, you paid 50 coins to fix.", "You ate a cookie and found 500 coins in it."],
+        "earns": [0, 0, 500],
+        "loss":[0,50,0],
+        "icon":"🍪",
+        "drinkable":false
+    },
+    {
+        "id": 2,
+        "price": 300,
+        "name": "Apple",
+        "description": "A fresh and juicy apple.",
+        "actions": ["You ate an apple and it was fresh and sweet.", "You went to eat the apple but it had a worm in it 🍎🪱", "You ate an apple and it was amazing."],
+        "earns": [0, 0, 0],
+        "loss":[0, 0, 0],
+        "icon":"🍎",
+        "drinkable":false
+    },
+    {
+        "id": 3,
+        "price": 70,
+        "name": "Bread",
+        "description": "Fresh bread.",
+        "actions": ["You ate bread.", "You ate bread and it was moldy, you are now feeling sick.", "You ate a bread slice and it was fresh and soft."],
+        "earns": [0, 0, 0],
+        "loss":[0,0,0],
+        "icon":"🥖",
+        "drinkable":false
+    },
+    {
+        "id": 4,
+        "price": 425,
+        "name": "Milk",
+        "description": "Just milk.",
+        "actions": ["You drank milk and it was nice.", "You drank milk and got 100 coins for it.", "You drank milk and it was spoiled so you paid 100 coins to the hospital."],
+        "earns": [0, 100, 0],
+        "loss":[0, 0, 100],
+        "icon":"🥛",
+        "drinkable":true
+    },
+    {
+        "id": 5,
+        "price": 100,
+        "name": "Dog food",
+        "description": "Food for your dog.",
+        "actions": ["You ate pet food and liked it 😳", "You ate pet food and it made you vomit.", "You ate pet food and it was strangely tasty."],
+        "earns": [0, 0, 0],
+        "loss":[0, 0, 0],
+        "icon":"",
+        "drinkable":false
+    },
+    {
+        "id": 6,
+        "price": 250,
+        "name": "Cat food",
+        "description": "Food for your cat.",
+        "actions": ["You ate pet food and liked it 😳", "You ate pet food and it made you vomit.", "You ate pet food and it was strangely tasty."],
+        "earns": [0, 0, 0],
+        "loss":[0, 0, 0],
+        "icon":"",
+        "drinkable":false
+    },
+    {
+        "id": 7,
+        "price": 130,
+        "name": "Fish food",
+        "description": "Glub.",
+        "actions": ["You ate pet food and liked it 😳", "You ate pet food and it made you vomit.", "You ate pet food and it was strangely tasty."],
+        "earns": [0, 0, 0],
+        "loss":[0, 0, 0],
+        "icon":"🐟",
+        "drinkable":false
+    },
+    {
+        "id": 8,
+        "price": 180,
+        "name": "Health regenerator",
+        "description": "Restores pet health to 100%.",
+        "actions": ["You had pet medication and it made you sick, you paid 100 coins to the hospital.", "You have pet medication and it made you find 200 coins you have lost", "You had pet medication and it make you pass out, you paid 300 for the hospital", "You had pet medication and sold your TV for 400 coins."],
+        "earns": [0, 200, 0, 400],
+        "loss":[100, 0, 300, 0],
+        "icon":"💊",
+        "drinkable":false
+    }
+]
