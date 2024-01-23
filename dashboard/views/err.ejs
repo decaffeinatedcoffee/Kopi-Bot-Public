@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="shortcut icon" href="/images/wpdata/default.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Mono:ital,wght@1,200&display=swap" rel="stylesheet">
+    <title>Kopi</title>
+</head>
+<style>
+    body{
+        background-color: #dbc1ac;
+        padding: 0px;
+        margin: 0px;
+    }
+    .header{
+        width: 98%;
+        text-align: right;
+    }
+    .header button{
+        width: 90px;
+        height: 40px;
+        background-color:#dbc1ac;
+        border: 1px solid #dbc1ac;
+        margin-top: 1%;
+        margin-left: 10px;
+        font-size: 17px;
+        font-family: 'Roboto Mono', monospace;
+        color: black;
+        cursor: pointer;
+        margin-right: 0px;
+    }
+    .header button:hover{
+        background-color: rgba(0, 0, 0, 0.2);
+        border: 1px solid #38220f;
+        transform: scale(1.1);
+    }
+    .prsent{
+     text-align: center;   
+     margin-top: 4%;
+    }
+    .prsent p{
+        color: #634832;
+    }
+    .prsent img{
+        width: 20vw;
+        height: 20vw;
+    }
+    .dc{
+        font-size: 18px;
+        font-family: 'Merriweather', serif;
+    }
+    .ex{
+        font-size: 16px;
+        font-family: 'Merriweather', serif;
+    }
+</style>
+<body>
+    <div class="header">
+     <button onclick="location.replace('/')">Home</button>
+     <button onclick="location.replace('https://discord.com/api/oauth2/authorize?client_id=1035770885975588884&redirect_uri=https%3A%2F%2Fkopibot.cyclic.app%2Fprofile&response_type=code&scope=identify%20guilds')">Profile</button>
+    </div>
+    <div class="prsent">
+    <img src="/images/wpdata/err.png" alt="Sad Kopi Image">
+    <p class="dc">Uh, oh, i think you do not have an account.</p>
+    <p class="ex">Use /register on a server i'm added.</p>
+    </div>
+</body>
+</html>

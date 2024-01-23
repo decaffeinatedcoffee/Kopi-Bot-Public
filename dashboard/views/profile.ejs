@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+     <meta property="og:url"                content="https://kopibot.cyclic.app/profile" />
+    <meta property="og:title"              content="Kopi Profile" />
+    <meta property="og:description"        content="Kopi bot dashboard." />
+    <meta property="og:image"              content="/images/wpdata/meta.png" />
+    <link rel="shortcut icon" href="/images/wpdata/default.png" type="image/x-icon">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+        href="https://fonts.googleapis.com/css2?family=Merriweather:ital@1&family=Roboto+Mono:ital,wght@1,200&display=swap"
+        rel="stylesheet">
+    <link rel="stylesheet" href="/scripts/wpdata/style.css">
+    <title>Kopi - Profile</title>
+    <script> 
+        let user = JSON.parse('<%-user%>');
+        let xp = JSON.parse('<%-xp%>');
+        let warns = JSON.parse('<%-warns%>');
+   </script>
+</head>
+<body>
+    <div class="header">
+        <img src="" id="userAvatar" alt="User Avatar">
+        <div class="headerbuttons">
+            <button onclick="location.replace('/')">Home</button>
+            <button
+                onclick="location.replace('https://discord.com/api/oauth2/authorize?client_id=1035770885975588884&redirect_uri=https%3A%2F%2Fkopibot.cyclic.app%2Fprofile&response_type=code&scope=identify%20guilds')">Profile</button>
+        </div>
+    </div>
+
+    <div id="home">
+        <p id="wlc"></p>
+        <p class="wr">Where can you go?</p>
+        <div class="opts">
+            <button onclick="goPersonal()">Personal</button>
+            <button onclick="goPets()">Pets</button>
+            <button onclick="goInv()">Inventory / Economy</button>
+            <button onclick="goMarry()">Marriage</button>
+            <button onclick="goWarns()">Warns</button>
+            <button onclick="goXP()">XP</button>
+        </div>
+    </div>
+    <div id="personal" class="nones">
+        <p style="margin-top:10%;">Your personal data:</p>
+        <p>Birth Date:</p>
+        <p id="bdate"></p>
+        <br>
+        <p>Pronouns</p>
+        <p id="pronouns"></p>
+        <br>
+    </div>
+    <div id="pets" class="nones">
+        <p style="margin-top:10%; font-size: 20px;">Your pet infos:</p>
+        <p id="petName"></p>
+        <br>
+        <div id="petData">
+            <p>Birth Date</p>
+            <p id="petbday"></p>
+            <br>
+            <p>Health</p>
+            <input type="range" min="0" max="100" disabled id="pethealthrange">
+            <p id="pethealth"></p>
+            <br>
+            <p>Hunger</p>
+            <input type="range" min="0" max="100" disabled id="pethungerrange">
+            <p id="pethunger"></p>
+            <br>
+            <p>Sleep</p>
+            <input type="range" min="0" max="100" disabled id="petsleeprange">
+            <p id="petsleep"></p>
+            <br>
+            <p>Last Sleep</p>
+            <p id="petlsleep"></p>
+            <br>
+            <p>Last Meal</p>
+            <p id="petmeal"></p>
+            <br>
+
+        </div>
+    </div>
+    <div id="inv" class="nones">
+        <p style="margin-top:10%; font-size: 20px;">Money and inventory</p>
+        <br>
+        <p>Your balance:</p>
+        <p id="bal"></p>
+        <br>
+        <p>Your inventory:</p>
+        <div id="invDiv">
+        </div>
+        <br>
+    </div>
+    <div id="marriage" class="nones">
+        <p style="margin-top:10%; font-size: 20px;">Marriage infos</p>
+        <br>
+        <p>Married?</p>
+        <p id="mrid"></p>
+        <br>
+        <div id="marryData">
+            <p>With:</p>
+            <p id="mrname"></p>
+            <br>
+            <p>Since:</p>
+            <p id="mrsince"></p>
+            <br>
+            <p>Because:</p>
+            <p id="mrcause"></p>
+        </div>
+    </div>
+    <div id="warns" class="nones">
+        <p style="margin-top:10%; font-size: 20px;">Warns</p>
+        <br>
+        <p>Total warns:</p>
+        <p id="totalWarns"></p>
+        <br>
+        <div id="warnsInfo">
+
+        </div>
+    </div>
+    <div id="xp" class="nones">
+        <p style="margin-top:10%; font-size: 20px;">XP</p>
+        <br>
+        <div id="exp">
+
+        </div>
+    </div>
+
+    <div id="warnData" class="nones">
+        <p style="margin-top:5%; font-size: 20px;">Warn info</p>
+        <img id="wdImg" alt="">
+        <p id="wdGuild"></p>
+        <p id="wdDate"></p>
+        <p id="wdMod"></p>
+        <p>Proofs: <a id="wdProof" target="_blank"></a></p>
+        <br>
+        <p>Cause:</p>
+        <div class="warnDesc" id="wdDesc"></div>
+        <button onclick="document.getElementById('warnData').style.display = 'none';">Close</button>
+    </div>
+    <button class="back nones" id="back" onclick="goBack()">↶ Back</button>
+
+</body>
+<script src="/scripts/wpdata/script.js">    
+    </script>
+</html>
